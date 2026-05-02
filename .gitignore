@@ -1,0 +1,60 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build directories
+/bin/
+/build/
+/out/
+/target/
+
+# Dependency directories
+/lib/
+
+# IDEs and editors
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Crash logs
+hs_err_pid*
+
+# Archives and packages
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Maven/Gradle
+.gradle/
+/.mvn/
+
+# User-specific files
+*.swp
+*~
+
+# Other
+coverage/
+logs/
+tmp/
