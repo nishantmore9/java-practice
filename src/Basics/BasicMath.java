@@ -15,6 +15,8 @@ public class BasicMath {
     // System.out.println("is Palindrome: "+isPanlindrome);
     //System.out.println("is Armstrong: "+isArmstrong);
     printDivisors(num);
+    System.out.println();
+    System.out.println(isPrime(num));
     sc.close();
   }
 
@@ -65,16 +67,29 @@ public class BasicMath {
 
   // print divisors
   static void printDivisors(int num) {
+    for(int i = 1; i * i <= num; i++) {
+      if(num % i == 0){
+        System.out.print(i + " ");
 
-  for(int i = 1; i * i <= num; i++) {
-    if(num % i == 0){
-      System.out.print(i + " ");
-
-      // print paired divisor
-      if(i != num / i) {
-        System.out.print(num / i + " ");
+        // print paired divisor
+        if(i != num / i) {
+          System.out.print(num / i + " ");
+        }
       }
     }
   }
-}
+
+  // Check number prime or not 
+  static boolean isPrime(int num) {
+    if(num <= 1) 
+      return false;
+
+    for(int i = 2; i < Math.sqrt(num); i++) {
+      if(num%i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
 }
